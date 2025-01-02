@@ -12,7 +12,14 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
 }
+
+/* .links {
+  justify-content: space-around;
+} */
 
 .profile-image {
   background: rebeccapurple;
@@ -45,4 +52,14 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+/* To make lists horizontal for nav. bar: set <div>'s as in HTML file, and make sure "display: flex;" is set for both! */
+.links-left,
+.links-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
